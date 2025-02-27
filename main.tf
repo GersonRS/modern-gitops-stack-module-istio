@@ -149,6 +149,13 @@ resource "argocd_application" "istiod" {
       }
     }
 
+    ignore_difference {
+      group         = "admissionregistration.k8s.io"
+      kind          = "ValidatingWebhookConfiguration"
+      name          = "istiod-default-validator"
+      json_pointers = ["/webhooks/0/failurePolicy"]
+    }
+
     destination {
       name      = var.destination_cluster
       namespace = var.namespace
