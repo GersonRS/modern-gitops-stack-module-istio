@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/GersonRS/modern-gitops-stack-module-istio/compare/v1.0.0...v1.1.0) (2025-02-27)
+
+
+### 🚀 New Features
+
+* adjust project ([fa6d036](https://github.com/GersonRS/modern-gitops-stack-module-istio/commit/fa6d03687ea198e8bd3bd1dcb5a3c10f2d71a9d3))
+
+
+### 🔥 Bug Fixes
+
+* add ignore difference to fix outofsync ([4a511cc](https://github.com/GersonRS/modern-gitops-stack-module-istio/commit/4a511ccaccb04442831a40176116dac0e778a62d))
+* add ignore difference to fix outofsync ([d233dd6](https://github.com/GersonRS/modern-gitops-stack-module-istio/commit/d233dd61e7471b2f2d644501bb1e8bc852dc948f))
+* add ignore difference to fix outofsync ([4e9bcfd](https://github.com/GersonRS/modern-gitops-stack-module-istio/commit/4e9bcfdd4726b32eefc04d3e41d77c6d028271d7))
+
 ## [2.4.0](https://github.com/GersonRS/modern-gitops-stack-module-minio/compare/v2.3.0...v2.4.0) (2024-05-01)
 
 
