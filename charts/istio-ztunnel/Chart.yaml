@@ -1,0 +1,9 @@
+apiVersion: v2
+dependencies:
+  - name: ztunnel
+    repository: https://istio-release.storage.googleapis.com/charts
+    version: "1.24.2"
+description: |
+  This chart installs istio ztunnel
+name: istio-ztunnel
+version: "0"
