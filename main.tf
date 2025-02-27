@@ -150,7 +150,7 @@ resource "argocd_application" "istiod" {
     }
 
     ignore_difference {
-      group         = "admissionregistration.k8s.io/v1"
+      group         = "admissionregistration.k8s.io"
       kind          = "ValidatingWebhookConfiguration"
       name          = "istio-validator-istio-system"
       json_pointers = ["/webhooks/0/failurePolicy"]
