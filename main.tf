@@ -439,8 +439,6 @@ resource "argocd_application" "kiali" {
 
 resource "null_resource" "this" {
   depends_on = [
-    resource.argocd_application.ztunnel,
-    var.gateway ? resource.argocd_application.gateway : {},
-    var.kiali ? resource.argocd_application.kiali : {},
+    resource.argocd_application.ztunnel
   ]
 }
