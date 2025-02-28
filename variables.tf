@@ -102,3 +102,15 @@ variable "dependency_ids" {
 #######################
 ## Module variables
 #######################
+
+variable "gateway" {
+  description = "Enable Gateway in the istio module."
+  type        = bool
+  default     = false
+}
+
+variable "kiali" {
+  description = "Enable Kiali in the istio module."
+  type        = bool
+  default     = true
+}

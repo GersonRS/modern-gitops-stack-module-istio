@@ -1,0 +1,24 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: istio-gateway
+  namespace: istio-system
+spec:
+  gatewayClassName: istio
+  listeners:
+  - protocol: HTTP
+    port: 80
+    name: http
+    allowedRoutes:
+      namespaces:
+        from: All
+  - protocol: HTTPS
+    port: 443
+    name: https
+    tls:
+      mode: Terminate
+      certificateRefs:
+      - name: my-cert-secret
+    allowedRoutes:
+      namespaces:
+        from: All
