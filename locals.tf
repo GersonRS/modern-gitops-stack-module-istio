@@ -54,7 +54,7 @@ locals {
             }
             grafana = {
               enabled      = true
-              internal_url = "http://kube-prometheus-stack-grafana.kube-prometheus-stack.svc.cluster.local:3000/"
+              internal_url = "http://kube-prometheus-stack-grafana.kube-prometheus-stack.svc.cluster.local:80/"
               external_url = "https://grafana.apps.kind.172-19-0-101.nip.io/"
               dashboards = [
                 {
